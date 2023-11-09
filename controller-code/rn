@@ -1,0 +1,9 @@
+#!/bin/bash
+~/firefox/firefox ./wagnot.html &
+java -cp $CLASSPATH:./lib/jinput-linux.jar:./lib/RXTXcomm.jar:. Main 139.78.71.51 2007 # tee log_`date +%s`
+#java -cp $CLASSPATH:./lib/jinput-linux.jar:./lib/RXTXcomm.jar:. Main 127.0.0.1 2014 #| tee log_`date +%s`
+
+#vlc http://IP:PORT/image.cgi?type=motion
+
+#java -cp $CLASSPATH:./lib/jinput-linux.jar:./lib/RXTXcomm.jar:. Main 10.20.20.1 2000 #| tee log_`date +%s`
+

@@ -1,0 +1,22 @@
+01 May 2014
+-------------------------------
+Team Atomic got second place in 2014 with this code. The code itself is, naturally, beautiful. However, the process to actually execute the code is not entirely intuitive. That won't be the case next time.
+
+This program depends on native libraries, and therefore can only run in certain environments. In particular, this must be run on Linux, and the correct library must be set for 32 or 64 bit systems.
+
+To execute the code, execute the script ./rn. To recompile the code, execute the script ./bld. If the program fails to run, try moving to the ./lib/ directory and execute ./swlibs, which will exchange the currently active libjinput-linux.so library with the inactive library (that is, from 32-bit to 64-bit and from 64-bit to 32-bit). It is important that this script be run from within the lib/ directory.
+
+The IP address and port of the robot should be set in the ./rn script. Just replace whatever IP is currently in the uncommented line.
+
+The IP address and port of the camera should be set in wagnot.html. This should be set in the img tag immediately below the commented-out embed tag.
+
+The program expects an Xbox 360 controller to be connected before execution.
+
+If I have forgotten to mention anything important, you can contact me at nick.overacker@okstate.edu (before I graduate) or nick.overacker@ymail.com (after I graduate).
+
+Cheers!
+
+
+OLD README
+-------------------------------
+It seems that this code is not very portable - it whines and complains from system to system. This is probably due to the .so libraries brought into play by JInput, which are compiled for specific architectures and OSes. If you want to run this code from your computer and don't run 32-bit Linux, let me know and I'll help you get it set up.

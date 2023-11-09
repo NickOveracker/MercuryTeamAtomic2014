@@ -1,0 +1,13 @@
+#!/bin/bash
+# Builds and compiles an exectuable jar file for the
+# Mercury controller code.
+
+javac -cp $CLASSPATH:./lib/jinput-linux.jar:./lib/RXTXcomm.jar:. *.java
+
+#echo "Class-Path: controller/jinput-linux.jar
+#Main-Class: Main
+#Created-By: Nick Overacker, OSU Mercury Robotics
+#" > manifest.txt
+
+#jar -cfm MercControl.jar manifest.txt *.class
+#chmod 700 MercControl.jar

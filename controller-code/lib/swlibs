@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mv libjinput-linux.so libjinput-linux.so.tmp
+mv libjinput-linux.so.other libjinput-linux.so
+mv libjinput-linux.so.tmp libjinput-linux.so.other

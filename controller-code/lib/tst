@@ -1,0 +1,2 @@
+#!/bin/bash
+java -Djava.library.path=. -cp jinput-linux.jar:jinput-test.jar net.java.games.input.test.ControllerReadTest
